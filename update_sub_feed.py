@@ -29,6 +29,5 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 print(f'title: {entry["title"]}')
                 print(f'channel: {entry['channel']}')
                 print(f'description: {entry["description"]}')
-                print(f'duration: {entry["duration"]}')
                 print(f'full response {str(entry)}')
                 print('********')
