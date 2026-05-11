@@ -7,6 +7,6 @@ ydl_opts = {
 }
 
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-    res = ydl.extract_info('ytsearch5:rickroll', download=False)
+    res = ydl.extract_info('ytsearch5:tjthings', download=False)
     for entry in res['entries']:
         print(str(entry))
