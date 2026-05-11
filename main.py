@@ -15,6 +15,7 @@ ydl_opts = {
     'quiet': True,
 }
 print(f'search for {args.query}')
+print(f'ytsearch{args.count}:{args.query}')
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     res = ydl.extract_info(f'ytsearch{args.count}:{args.query}', download=False)
     for idx ,entry in enumerate(res['entries']):
