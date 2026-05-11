@@ -10,6 +10,11 @@ on:
         description: search query
         required: true
         type: string
+      count:
+        description: how many videos?
+        required: true
+        default: 10
+        type: number
 jobs:
   build:
   
@@ -31,7 +36,7 @@ jobs:
         python -m pip install yt-dlp
     - name: run code
       run: |
-        python main.py ${{github.event.inputs.query}} > res.txt
+        python main.py ${{github.event.inputs.query}} ${{github.event.inputs.count}} > res.txt
     - name: commiting to github
       run: |
           git config user.name  "github-actions[bot]"
