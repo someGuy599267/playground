@@ -4,11 +4,12 @@
 name: search test
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-
+  workflow_dispatch:
+    inputs:
+      query:
+        description: search query
+        required: true
+        type: string
 jobs:
   build:
   
@@ -30,7 +31,7 @@ jobs:
         python -m pip install yt-dlp
     - name: run code
       run: |
-        python main.py > res.txt
+        python main.py ${{github.event.inputs.query}} > res.txt
     - name: commiting to github
       run: |
           git config user.name  "github-actions[bot]"
