@@ -1,0 +1,8 @@
+search for cammiboig
+0.
+title: Seven Days & Seven Knights | A DELTARUNE Theory
+channel: cammyboiG
+description: My quest to find out if there is room for a new undertale/deltarune content creator in the year of our lord 2024 0:00 Intro 1:07 Part ...
+duration: 2043.0
+full response {'_type': 'url', 'ie_key': 'Youtube', 'id': 'bpZne5nM5FQ', 'url': 'https://www.youtube.com/watch?v=bpZne5nM5FQ', 'title': 'Seven Days & Seven Knights | A DELTARUNE Theory', 'description': 'My quest to find out if there is room for a new undertale/deltarune content creator in the year of our lord 2024 0:00 Intro 1:07 Part\xa0...', 'duration': 2043.0, 'channel_id': 'UCVGQeXNI91A4JTvyppijLEQ', 'channel': 'cammyboiG', 'channel_url': 'https://www.youtube.com/channel/UCVGQeXNI91A4JTvyppijLEQ', 'uploader': 'cammyboiG', 'uploader_id': '@cammyboig', 'uploader_url': 'https://www.youtube.com/@cammyboig', 'thumbnails': [{'url': 'https://i.ytimg.com/vi/bpZne5nM5FQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLArwms-vsmNxT3sGEQM-FcCdKPaKQ', 'height': 202, 'width': 360}, {'url': 'https://i.ytimg.com/vi/bpZne5nM5FQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCTbWoAIOjhmpStPXduNNFAD9lEHA', 'height': 404, 'width': 720}], 'timestamp': None, 'release_timestamp': None, 'availability': None, 'view_count': 211142, 'live_status': None, 'channel_is_verified': None, '__x_forwarded_for_ip': None}
+********
