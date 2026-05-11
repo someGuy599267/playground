@@ -18,6 +18,7 @@ ydl_opts = {
 
 
 print(f'sub feed updated ({str(datetime.datetime.now())})')
+print(f'count: {args.count}')
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     with open('subs.txt', 'r') as f:
         for line in f:
