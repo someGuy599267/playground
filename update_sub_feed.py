@@ -1,5 +1,6 @@
 import argparse
 import datetime
+from time import sleep
 
 import yt_dlp
 
@@ -10,7 +11,7 @@ args = parser.parse_args()
 
 
 ydl_opts = {
-    'extract_flat': True,
+    # 'extract_flat': True,
     'quiet': True,
     'playlistend': int(args.count),
 }
@@ -27,3 +28,4 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 print(f'{idx}.')
                 print(f'full response {str(entry)}')
                 print('********')
+                sleep(3)
