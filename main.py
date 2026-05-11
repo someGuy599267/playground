@@ -8,10 +8,5 @@ ydl_opts = {
 
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     res = ydl.extract_info('ytsearch5:rickroll', download=False)
-    if 'entries' in res:
-        for video in res['entries']:
-            print(video['title'])
-            print(video['description'])
-            print(video['url'])
-            print(video['duration'])
-            print(video.keys())
+    for entry in res['entries']:
+        print(str(entry))
