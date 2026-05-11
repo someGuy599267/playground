@@ -26,8 +26,5 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             res = ydl.extract_info(f'https://www.youtube.com/channel/{channel_id}/videos', download=False)
             for idx, entry in enumerate(res['entries']):
                 print(f'{idx}.')
-                print(f'title: {entry["title"]}')
-                print(f'channel: {entry['channel']}')
-                print(f'description: {entry["description"]}')
                 print(f'full response {str(entry)}')
                 print('********')
