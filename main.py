@@ -7,12 +7,12 @@ parser.add_argument('count', help='how many videos')
 args = parser.parse_args()
 
 ydl_opts = {
-    # 'extract_flat': True,
+    'extract_flat': True,
     'quiet': True,
 }
 print(f'search for {args.query}')
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-    res = ydl.extract_info(f'ytsearch30:{args.query}', download=False)
+    res = ydl.extract_info(f'ytsearch{args.count}:{args.query}', download=False)
     for idx, entry in enumerate(res['entries']):
         print(f'{idx}.')
         print(f'title: {entry["title"]}')
