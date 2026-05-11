@@ -28,7 +28,7 @@ jobs:
         python -m pip install yt-dlp
     - name: run code
       run: |
-        python update_sub_feed.py ${{github.event.inputs.count}}
+        python update_sub_feed.py ${{github.event.inputs.count}} > res.txt
     - name: commiting to github
       run: |
           git config user.name  "github-actions[bot]"
