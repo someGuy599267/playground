@@ -10,3 +10,5 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     res = ydl.extract_info('ytsearch5:tjthings', download=False)
     for entry in res['entries']:
         print(str(entry))
+
+    print(ydl._ies)
