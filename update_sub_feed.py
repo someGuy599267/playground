@@ -28,4 +28,4 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 print(f'{idx}.')
                 print(f'full response {str(entry)}')
                 print('********')
-                sleep(3)
+                sleep(1)

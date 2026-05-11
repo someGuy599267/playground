@@ -7,7 +7,7 @@ parser.add_argument('count', help='how many videos')
 args = parser.parse_args()
 
 ydl_opts = {
-    'extract_flat': True,
+    # 'extract_flat': True,
     'quiet': True,
 }
 print(f'search for {args.query}')
