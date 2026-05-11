@@ -15,7 +15,7 @@ ydl_opts = {
 }
 print(f'search for {args.query}')
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-    res = ydl.extract_info(f'ytsearch20:{args.query}', download=False)
+    res = ydl.extract_info(f'ytsearch10:{args.query}', download=False)
     for idx ,entry in enumerate(res['entries']):
         print(f'{idx}.')
         print(f'title: {entry["title"]}')
