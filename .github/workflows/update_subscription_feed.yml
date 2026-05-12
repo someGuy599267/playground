@@ -28,12 +28,12 @@ jobs:
         python -m pip install yt-dlp
     - name: run code
       run: |
-        python update_sub_feed.py ${{github.event.inputs.count}}
+        python update_sub_feed.py ${{github.event.inputs.count}} > sub_feed.txt
     - name: commiting to github
       run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add res.txt
-          git commit -m "log"
+          git commit -m "sub feed update"
           git push
 
