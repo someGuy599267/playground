@@ -8,14 +8,13 @@ parser = argparse.ArgumentParser(description='')
 parser.add_argument('count', help='how many videos')
 args = parser.parse_args()
 
-
-
 ydl_opts = {
-    'extract_flat': 'in_playlist',
     'quiet': True,
+    'extract_flat': False,
     'playlistend': int(args.count),
+    'skip_download': True,
+    'ignoreerrors': True,
 }
-
 
 print(f'sub feed updated ({str(datetime.datetime.now())})')
 print(f'count: {args.count}')
