@@ -11,7 +11,7 @@ args = parser.parse_args()
 
 
 ydl_opts = {
-    'extract_flat': True,
+    'extract_flat': 'in_playlist',
     'quiet': True,
     'playlistend': int(args.count),
 }
@@ -30,4 +30,3 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 print(f'title: {entry["title"]}')
                 print(f'full response {str(entry)}')
                 print('********')
-                sleep(1)
