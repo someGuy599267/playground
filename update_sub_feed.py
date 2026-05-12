@@ -11,7 +11,7 @@ args = parser.parse_args()
 
 
 ydl_opts = {
-    'extract_flat': True,
+    # 'extract_flat': True,
     'quiet': True,
     'playlistend': int(args.count),
 }
