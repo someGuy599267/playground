@@ -22,8 +22,10 @@ jobs:
         mkdir -p out
     - name: run code
       run: |
-          npx auto-api-discovery capture ${{ github.event.inputs.domain }}
-          npx auto-api-discovery export ./out/scrape.json
+        git clone https://github.com/StudyJailbro/apifinder.git
+        cd apifinder
+        pip install -r requirements.txt
+        python APIFinder.py -u ${{ github.event.inputs.domain }} -d
     - name: commiting to github
       run: |
           git config user.name  "github-actions[bot]"
