@@ -36,7 +36,7 @@ jobs:
         python -m pip install requests
     - name: run code
       run: |
-        python gamebanana_scraper.py
+        python gamebanana_scraper.py > out/gamebanana.txt
     - name: commiting to github
       run: |
           git config user.name  "github-actions[bot]"
