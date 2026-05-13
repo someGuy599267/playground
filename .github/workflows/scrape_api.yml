@@ -7,22 +7,6 @@ on:
         description: domain
         type: string
         required: true
-      max_pages:
-        description: max pages
-        required: true
-        type: number
-        default: 100
-      timeout:
-        description: timeout
-        required: true
-        type: number
-        default: 20000
-      delay:
-        description: delay
-        required: true
-        type: number
-        default: 1000
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -36,14 +20,13 @@ jobs:
     - name: preparations
       run: |
         mkdir -p out
-        rm -f scrape.txt
-        touch scrape.txt
     - name: run code
       run: |
-        git clone https://github.com/mahirozdin/API-Endpoint-Discovery-Tool.git
-        cd API-Endpoint-Discovery-Tool
-        npm install
-        node index.js --domain=${{github.event.inputs.domain}} --maxPages=${{github.event.inputs.max_pages}} --timeout=${{github.event.inputs.timeout}} --delay=${{github.event.inputs.delay}} | tee -a out/scrape.txt
+        git clone https://github.com/Fruit-Guardians/Api-Finder.git
+        cd Api-Finder
+        pip install -r requirements.txt
+        python main.py -u https://example.com
+        python main.py -u https://example.com -o ./out/scrape.json
     - name: commiting to github
       run: |
           git config user.name  "github-actions[bot]"
