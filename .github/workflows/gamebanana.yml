@@ -7,14 +7,8 @@ on:
   workflow_dispatch:
     inputs:
       query:
-        description: search query
-        required: true
+        description: dummy
         type: string
-      count:
-        description: how many videos?
-        required: true
-        default: 10
-        type: number
 jobs:
   build:
 
