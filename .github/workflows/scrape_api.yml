@@ -22,10 +22,8 @@ jobs:
         mkdir -p out
     - name: run code
       run: |
-        git clone https://github.com/Fruit-Guardians/Api-Finder.git
-        cd Api-Finder
-        pip install -r requirements.txt
-        python main.py -u ${{ github.event.inputs.domain }} -o ./out/scrape.json
+          npx auto-api-discovery capture ${{ github.event.inputs.domain }}
+          npx auto-api-discovery export ./out/scrape.json
     - name: commiting to github
       run: |
           git config user.name  "github-actions[bot]"
