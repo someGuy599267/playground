@@ -25,8 +25,7 @@ jobs:
         git clone https://github.com/Fruit-Guardians/Api-Finder.git
         cd Api-Finder
         pip install -r requirements.txt
-        python main.py -u https://example.com
-        python main.py -u https://example.com -o ./out/scrape.json
+        python main.py -u ${{ github.event.inputs.domain }} -o ./out/scrape.json
     - name: commiting to github
       run: |
           git config user.name  "github-actions[bot]"
