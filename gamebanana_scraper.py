@@ -24,8 +24,6 @@ for i in range(1, 20):
 #     print(response.status_code)
 #     lst += ["kristal " + i['_sName'] for i in response.json()['_aRecords']]
 
-lst = list(set(lst))
-
 for i in lst:
     print(i)
 print(len(lst))
